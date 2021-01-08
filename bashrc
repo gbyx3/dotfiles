@@ -20,7 +20,7 @@ export PATH
 # GIT prompt
 # https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745
 parse_git_origin() {
-	origin_url=$(git config --get remote.origin.url 2> /dev/null | sed -e 's/[a-z@.]\+://' -e 's/\.git//')
+        origin_url=$(git config --get remote.origin.url 2> /dev/null | sed -E -e 's|https://\|git@||' -e 's|github.com[/\|:]||' -e 's|\.git||')
 	if [[ -z $origin_url ]] ; then
 		origin_url="$(pwd)"
 	fi
