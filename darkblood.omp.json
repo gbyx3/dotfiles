@@ -13,6 +13,24 @@
         {
           "foreground": "#ffffff",
           "style": "plain",
+          "template": "<#CB4B16>[</>{{ .Venv }}<#CB4B16>]</>",
+          "type": "python"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#ffffff",
+          "style": "plain",
+          "template": "<#CB4B16>[</>\uf0e7<#CB4B16>]</>",
+          "type": "root"
+        },
+        {
+          "foreground": "#ffffff",
+          "style": "plain",
           "template": "<#CB4B16>[</>{{ .HEAD }}<#CB4B16>]</>",
           "type": "git"
         }
