@@ -1,0 +1,15 @@
+import = ["/Users/gby/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrains Mono"
+
+[window]
+decorations = "buttonless"
+
+[window.padding]
+x = 7
+y = 4
+
